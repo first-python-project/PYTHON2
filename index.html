@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Service Crawling</title>
+</head>
+<body>
+    <h1>Web Service Crawling</h1>
+
+    {% for result in crawl_results %}
+    <div>
+        <h2>{{ result.title }}</h2>
+        <p>{{ result.link }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
